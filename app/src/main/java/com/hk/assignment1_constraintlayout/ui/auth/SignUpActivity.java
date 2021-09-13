@@ -1,4 +1,4 @@
-package com.hk.assignment1_constraintlayout;
+package com.hk.assignment1_constraintlayout.ui.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -11,6 +11,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import com.hk.assignment1_constraintlayout.R;
+import com.hk.assignment1_constraintlayout.ui.auth.login.LoginActivity;
 
 public class SignUpActivity extends AppCompatActivity {
     Toolbar toolbar;
@@ -47,7 +50,7 @@ public class SignUpActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(SignUpActivity.this,LoginActivity.class);
+                Intent i = new Intent(SignUpActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });
